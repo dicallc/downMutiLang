@@ -19,19 +19,20 @@ import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
 public class Main {
+  static String basePath="D:\\code\\mitrade-Android\\";
   private static String sJSESSIONID="";
-  static String enFile="D:\\code\\mitrade-Android\\app\\src\\main\\res\\values\\strings.xml";
+  static String enFile=basePath+"app\\src\\main\\res\\values\\strings.xml";
   static String enUrl="http://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=en-US";
   static String cnUrl="http://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=zh-CN";
-  static String cnFile="D:\\code\\mitrade-Android\\app\\src\\main\\res\\values-zh-rCN\\strings.xml";
+  static String cnFile=basePath+"app\\src\\main\\res\\values-zh-rCN\\strings.xml";
   static String twUrl="http://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=zh-TW";
-  static String twFile="D:\\code\\mitrade-Android\\app\\src\\main\\res\\values-zh-rTW\\strings.xml";
+  static String twFile=basePath+"app\\src\\main\\res\\values-zh-rTW\\strings.xml";
   static String koUrl="http://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=ko";
-  static String koFile="D:\\code\\mitrade-Android\\app\\src\\main\\res\\values-ko\\strings.xml";
+  static String koFile=basePath+"app\\src\\main\\res\\values-ko\\strings.xml";
   static String thUrl="http://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=th";
-  static String thFile="D:\\code\\mitrade-Android\\app\\src\\main\\res\\values-th\\strings.xml";
+  static String thFile=basePath+"app\\src\\main\\res\\values-th\\strings.xml";
   static String viUrl="http://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=vi";
-  static String viFile="D:\\code\\mitrade-Android\\app\\src\\main\\res\\values-vi\\strings.xml";
+  static String viFile=basePath+"app\\src\\main\\res\\values-vi\\strings.xml";
   public static void main(String[] args) {
     try {
       loadLang(enUrl,enFile);
