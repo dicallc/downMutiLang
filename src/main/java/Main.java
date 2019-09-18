@@ -36,11 +36,11 @@ public class Main {
   public static void main(String[] args) {
     try {
       loadLang(enUrl,enFile);
-      //loadLang(cnUrl,cnFile);
-      //loadLang(twUrl,twFile);
-      //loadLang(koUrl,koFile);
-      //loadLang(thUrl,thFile);
-      //loadLang(viUrl,viFile);
+      loadLang(cnUrl,cnFile);
+      loadLang(twUrl,twFile);
+      loadLang(koUrl,koFile);
+      loadLang(thUrl,thFile);
+      loadLang(viUrl,viFile);
     } catch (Exception mE) {
       mE.printStackTrace();
     }
