@@ -33,14 +33,20 @@ public class Main {
   static String thFile=basePath+"app\\src\\main\\res\\values-th\\strings.xml";
   static String viUrl="http://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=vi";
   static String viFile=basePath+"app\\src\\main\\res\\values-vi\\strings.xml";
+  static String idUrl="https://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=id";
+  static String idFile=basePath+"app\\src\\main\\res\\values-in\\strings.xml";
+  static String myUrl="https://cms-app.yuanqu-tech.com/admin/translate/download?terminal=is_android&lang=my";
+  static String myFile=basePath+"app\\src\\main\\res\\values-ml\\strings.xml";
   public static void main(String[] args) {
     try {
       loadLang(enUrl,enFile);
       loadLang(cnUrl,cnFile);
       loadLang(twUrl,twFile);
       loadLang(koUrl,koFile);
-      loadLang(thUrl,thFile);
       loadLang(viUrl,viFile);
+      loadLang(idUrl,idFile);
+      loadLang(myUrl,myFile);
+      loadLang(thUrl,thFile);
     } catch (Exception mE) {
       mE.printStackTrace();
     }
